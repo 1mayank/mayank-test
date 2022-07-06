@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
+## Installing instructions
+
+Run `npm install` in root directory.
+Then Run `cd backend`.
+Then Run `composer install`.
+Then Run `php artisan serve`.
+Then copy the port number from url to `src/environments/envionment.ts` file.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	<a class="navbar-brand" href="#"><img src="https://www.packtpub.com/media/logo/stores/1/logo.png" title="Packt Logo" alt="Packt Logo" width="135" height="64" class="hidden-xs hidden-sm logo"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active"> <a class="nav-link" href="https://www.packtpub.com/free-learning"> Free Learning</a> </li>
+		</ul>
+		<a href="https://subscribe.packtpub.com/">
+			<button class="btn subscribe lh-1rem" type="submit">Subscribe</button>
+		</a>
+		<a href="https://subscription.packtpub.com/login">
+			<button class="btn subscribe lh-1rem" type="submit">Subscriber Sign In</button>
+		</a>
+		<form class="form-inline mt-2 mt-md-0">
+			<input class="form-control mr-sm-2 h-1-8rem" type="text" placeholder="Search" aria-label="Search">
+			<button class="btn search btn-outline-success my-2 my-sm-0 lh-1rem" type="submit">Search</button>
+		</form>
+	</div>
+</nav>
+<div class="" style="margin-top: 96px;"></div>
+<div class="container mt-5">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>eBooks</h1> </div>
+	</div>
+	<div class="row">
+		<div class="col-md-3" *ngFor="let product of products; let i=index;">
+			<div class="card">
+				<div class="image-container">
+					<div class="first">
+						<div class="d-flex justify-content-between align-items-center">   </div>
+					</div> <img src="{{baseUrl + product.cover_image}}" class="img-fluid rounded thumbnail-image"> </div>
+				<div class="product-detail-container p-2">
+					<div class="d-flex justify-content-between align-items-center">
+						<h5 class="dress-name">{{product.title| truncate}}</h5>
+					</div>
+					
+					<div class="d-flex justify-content-between align-items-center pt-1">
+						<div> <img class="rating" src="assets/img/start.png" /> <span class="rating-number">4.8</span> </div> <span class="buy">Read More</span> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<a class="load-more" (click)="loadMore()" *ngIf="showLoadMore"> 
+			<button class="btn subscribe lh-1rem">Load more</button>
+		</a>
+	</div>
+</div>
+<div class="" style="margin-bottom: 96px;"></div>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
+	<div class="container"> <small class="copyright">
+			<span>The word 'Packt' and the Packt logo are registered trademarks belonging to Packt Publishing Limited.
+				All rights reserved</span>
+		</small>
+		<ul class="social-link">
+			<li>
+				<a href="https://www.facebook.com/PacktPub/" target="_blank"> <span class="fab fa-facebook-f"></span></a>
+			</li>
+			<li>
+				<a href="https://www.twitter.com/PacktPublishing" target="_blank"> <span class="fab fa-twitter"></span></a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/company/packt-publishing/" target="_blank"> <span class="fab fa-linkedin"></span></a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/user/packt1000/featured" target="_blank"> <span class="fab fa-youtube"></span></a>
+			</li>
+			<li>
+				<a href="https://github.com/PacktPublishing" target="_blank"> <span class="fab fa-github"></span></a>
+			</li>
+			<li>
+				<a href="https://hub.packtpub.com/feed/" target="_blank"> <span class="fa fa-rss"></span></a>
+			</li>
+		</ul>
+	</div>
+</nav>
